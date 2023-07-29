@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* PERTENECE A LA PAGINA DE INDEX.HTML (HOME) */
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=DynaPuff:wght@500&family=Merienda:wght@300&display=swap");
+:root {
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10:#171717;
+  --color-neutral-30:#a8a29e;
+  --color-neutral-40: #f5f5f5;
+}
+
+.a {
+  font-family: "Bruno Ace", cursive;
+  font-family: "DynaPuff", cursive;
+  font-family: "Merienda", cursive;
+}
+
+.galeria-productos {
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: auto;
+  justify-items: center;
+}
+.dire-contact {
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: #1a1919;
+  color: white;
+  transition: all 0.4 ease 0;
+}
+.botoncitomayor {
+  display: flex;
+  justify-content: center;
+}
+.mapita {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.galeria-productos > div {
+  border-style: solid;
+  border-color: #0e0c0c;
+  border-width: 2px;
+  display: grid;
+  justify-items: center;
+}
+
+.galeria-productos > div > img {
+  width: 80%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: none;
+  padding: 0;
+  font-family: "Bruno Ace", cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 10px 60px;
+}
+
+.header .logo {
+  height: 70px;
+  width: auto;
+}
+
+/* .header .barra-nave li:hover{
+    transform: scale(1.1);
+}
+ */
+.header .barra-nave li a:hover {
+  color: rgba(70, 85, 94, 0.678);
+}
+
+h1, h2, h5 {
+  justify-content: center;
+  display: flex;
+}
+
+.carouselExample {
+  overflow: hidden;
+}
+
+.galeriados {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.galeriatres {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.galeriacuatro {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  margin: 90%;
+}
+
+
+.card {
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card-titulo {
+  background-color: red($color: #000000);
+}
+.card > div > img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+/* Botonsito color */
+
+/* PERTENECE A LA PAGINA DE TIENDA.HTML  */
+/* SECTION UNO (CUADRO UNO) */
+.titulos {
+  font-size: 18px;
+}
+
+.iconos {
+  margin-top: -8px;
+}
+
+.iconosx {
+  margin: -4px;
+  padding-right: 20px;
+}
+
+.cuadrito-uno {
+  margin: 10px;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cuadrito-dos {
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+button.btn-close {
+  margin: 10 10 10 10;
+}
+
+.text-bg-secondary:hover {
+  background-color: red;
+}
+
+.btn-btn-primary:hover {
+  background-color: #919191;
+}
+
+.btn-btn-primary {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-btn-danger:hover {
+  background-color: #919191;
+}
+
+.fa-solid {
+  font-weight: 600;
+  margin: 15px;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 4%;
+  font-size: 15px;
+}
+
+/* Modales de 1 row */
+/* PERTENECE A LA PAGINA DE SALE.HTML  */
+/* PERTENECE A LA SECCIÓN ABRIGOS Y CALZADOS .HTML */
+/* ABRIGOS */
+.btn-ver {
+  padding: 0px 15px;
+  height: 40px;
+  margin: 15px 0px;
+}
+
+h4, p {
+  justify-content: center;
+  display: flex;
+}
+
+.modal-body img {
+  height: auto;
+  width: 100%;
+}
+
+/* Cuadros1 */
+.claseunito1 {
+  padding: 15px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.claseunito2 {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.claseunito3 {
+  justify-content: center;
+  display: flex;
+}
+
+.claseunito4 {
+  justify-content: center;
+  display: flex;
+}
+
+.text-body-secondary {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.cuadrotres {
+  display: flex;
+  justify-content: center;
+}
+

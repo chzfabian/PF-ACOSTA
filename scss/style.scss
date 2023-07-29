@@ -1,0 +1,122 @@
+// Import partials
+@import 'base/variables';
+@import 'base/global';
+
+@import 'components/galeria';
+@import 'components/cards';
+@import 'components/buttons';
+
+@import 'layouts/header';
+@import 'layouts/footer';
+
+@import 'pages/index';
+@import 'pages/tienda';
+@import 'pages/accesorios';
+@import 'pages/contacto';
+
+// Import mixins
+@import 'mixins/responsive';
+@import 'mixins/animations';
+@import 'mixins/utilities';
+
+/* Animacion */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* 
+.img {
+  position: absolute;
+  z-index: 1000;
+}
+
+.loader {
+  background: #0e0c0c;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  clip-path: circle(150% at 100% 0);
+  transition: clip-path 0.8s ease-in-out;
+} 
+
+.loader2 {
+  clip-path: circle(0% at 100% 100%);
+} */
+
+/* Estilos para el preloader */
+.preloader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9999;
+}
+.body2 {
+  overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+}
+
+/* Ocultar el preloader cuando el contenido esté cargado */
+body.loaded .preloader {
+  display: none;
+}
+.sixtin {
+  flex-direction: column;
+}
+
+.nico {
+  animation-name: bounceInDown;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.botoncitomayor{
+  animation-name: bounceInRight;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
