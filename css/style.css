@@ -304,6 +304,7 @@ div.modal-footer {
   width: 100%;
 }
 
+
 /* Cuadros1 */
 .claseunito1 {
   padding: 15px;
@@ -606,14 +607,20 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem, 2rem;
   }
+  .container-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 100vh;
+  }
 }
+
 @media (min-width: 600px) {
   .galeria-productos {
     display: flex;
   }
 }
-
-
 
 
 /*# sourceMappingURL=style.css.map */
