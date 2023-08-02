@@ -62,7 +62,7 @@ h4, p {
   }
   
 body {
-  background-color: aliceblue;
+  background-color: white;
 }
 .galeria-productos {
   display: grid;
@@ -136,6 +136,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.card-footer:last-child {
+  border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+  text-align: center;
+}
+
 
 .card-titulo {
   background-color: 0;
