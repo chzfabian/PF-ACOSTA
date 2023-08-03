@@ -1,4 +1,5 @@
-# coderhouse :computer:
+# Coderhouse #42970:computer:
+# Curso: Desarrollo Web :technologist:
 
 :hammer_and_wrench:Github: 
 https://chzfabian.github.io/PF-ACOSTA/
@@ -10,4 +11,4 @@ https://pf-acosta.vercel.app/
 https://balsamiq.cloud/sdxec1k/pd93pjh
 
 
-www.chzfabian.com
+# www.chzfabian.com :mage_man:
