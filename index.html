@@ -24,9 +24,56 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <title>BALCADUR</title>
-</head>
+   <!-- Font Awesome (Kit) -->
+   <script src="https://kit.fontawesome.com/2c3bdfbed1.js" crossorigin="anonymous"></script>
 
+    <title>BALCADUR</title>
+</head>
+<!-- Transitions -->
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #FFF;
+      font-size: 16px;
+      background-color: #f7f7f7;
+  }
+
+  .marquee {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+      border: 1px solid rgba(0, 0, 0, .15);
+      background-color: #ffffff;
+      overflow: hidden;
+      position: relative;
+      height: 50px;
+      width: 100%;
+      /* Full width of its parent */
+      white-space: nowrap;
+  }
+
+  .marquee p {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      /* Start off the right edge */
+      transform: translateX(100%);
+      /* Animate to the left */
+      animation: scroll-left 20s linear infinite;
+  }
+
+  @keyframes scroll-left {
+      0% {
+          transform: translateX(100%);
+      }
+
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+</style>
 <body class="body2">
   <div class="preloader">
 
@@ -43,8 +90,16 @@
       <div></div>
     </div>
   </div>
+  <div class="marquee">
+    <p>
+      <i class="fa-sharp fa-2xl fa-solid fa-truck-fast fa-fade" style="color: #000000;"></i> 
+     ENVIOS GRATIS En compras mayores a $95.000!! CABA |GBA 
+    </p>
+      
 
+</div>
   <header>
+    
     <nav class="navbar navbar-expand-lg bg-transparent sticky-top">
       <div class="container-fluid align-items-center">
         <a class="navbar-brand" href="./index.html">
@@ -103,23 +158,23 @@
   <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner col-md-7 text-center text-md-start">
       <div class="carousel-item active">
-        <img src="./imagenes/Fondo1.jpg" width="100%" height="500px" class="d-block w-100" alt="FotoLocal">
+        <img src="./imagenes/fondo3.png" width="100%" height="350px" class="d-block w-100" alt="FotoLocal">
       </div>
       <div class="carousel-item">
-        <video width="100%" height="500px" controls autoplay loop>
+        <video width="100%" height="350px" controls autoplay loop>
           <source src="./imagenes/Video.mp4 " type="video/mp4">
           <source src="./imagenes/Video.mp4" type="video/ogg">
       </div>
       <div class="carousel-item">
-        <img src="./imagenes/Fondo2.jpg" width="100%" height="500px" class="d-block w-100"
+        <img src="./imagenes/Fondo5.png" width="100%" height="350px" class="d-block w-100"
           alt="chico con campera negra">
       </div>
-      <div class="carousel-item">
+<!--       <div class="carousel-item">
         <img src="./imagenes/1 (3).png" width="100%" height="500px" class="d-block w-100" alt="campera marron">
-      </div>
-      <div class="carousel-item">
+      </div> -->
+<!--       <div class="carousel-item">
         <img src="./imagenes/Foto42.jpg" width="100%" height="500px" class="d-block w-100" alt="foto oufit">
-      </div>
+      </div> -->
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -154,14 +209,14 @@
   <!-- Galeria Dos  -->
   <div class="galeria-productos">
     <div>
-      <img src="./imagenes/3 (1).jpg" alt="JeansNegro">
+      <img src="./imagenes/Foto65.jpg" alt="CadenaDeOro">
     </div>
     <div>
-      <img src="./imagenes/4 (1).jpg" alt="JeansBlanco">
+      <img src="./imagenes/Foto80.jpg" alt="ZapatillaAdidas">
     </div>
 
     <div>
-      <img src="./imagenes/4.jpg" alt="JeanNegro">
+      <img src="./imagenes/Foto60.jpg" alt="PulceraNegra">
     </div>
 
     <div>
